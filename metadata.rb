@@ -1,0 +1,11 @@
+name 'site_config-2'
+maintainer 'The Authors'
+maintainer_email 'saleseng@chef.io'
+source_url 'https://what.is.love'
+issues_url 'https://baby.dont.hurt.me'
+license 'all_rights'
+description 'Installs/Configures site_config-2'
+long_description 'Installs/Configures site_config-2'
+version '0.2.4'
+
+depends 'base_web'

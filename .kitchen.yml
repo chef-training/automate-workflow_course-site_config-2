@@ -1,0 +1,31 @@
+---
+driver:
+  name: ec2
+  require_chef_omnibus: true
+  region: us-west-2
+  security_group_ids: sg-2560a741
+  instance_type: c3.large
+  aws_ssh_key_id: chef_demo
+  tags:
+    Name: "Chef Demo Test Kitchen Instance"
+    created-by: "test-kitchen"
+    user: Administrator
+
+transport:
+  username: ubuntu
+  ssh_key: ~/.ssh/id_rsa
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[site_config-2::default]
+    attributes:
