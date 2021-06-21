@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: site_config-2
+# Cookbook:: site_config-2
 # Recipe:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright:: (c) 2016 The Authors, All Rights Reserved.
 
 include_recipe 'base_web'
 
